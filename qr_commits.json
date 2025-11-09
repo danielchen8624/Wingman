@@ -1,0 +1,2130 @@
+{
+  "You sent do u have good rizz Enter": {
+    "items": [
+      {
+        "resp": "I got enough to share, you in?",
+        "stage": "banter",
+        "heat": 0,
+        "rating": null,
+        "reason": "",
+        "ts": 1762655099602
+      },
+      {
+        "resp": "Rizz level: expert. Wanna test it?",
+        "stage": "banter",
+        "heat": 0,
+        "rating": null,
+        "reason": "",
+        "ts": 1762655099602
+      },
+      {
+        "resp": "Only if you can handle it",
+        "stage": "banter",
+        "heat": 0,
+        "rating": null,
+        "reason": "",
+        "ts": 1762655099602
+      }
+    ]
+  },
+  "You sent I'll give you everything you crave Enter": {
+    "items": [
+      {
+        "resp": "You ready for the ride of your life?",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762660268878
+      },
+      {
+        "resp": "Just wait, I’ll blow your mind",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762660268878
+      },
+      {
+        "resp": "You won’t be disappointed",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762660268878
+      }
+    ]
+  },
+  "Wendy Harper Oh I’ll show you confident Enter": {
+    "items": [
+      {
+        "resp": "Confidence turns me on",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762660323206
+      }
+    ]
+  },
+  "Wendy Harper Maybe throw some other things in there while im at it Enter": {
+    "items": [
+      {
+        "resp": "What else you got in mind?",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762660339988
+      },
+      {
+        "resp": "Bring it on, I can handle it",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762660339988
+      },
+      {
+        "resp": "I love a multitasker",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762660339988
+      }
+    ]
+  },
+  "Wendy Harper It’ll be a surprise Enter": {
+    "items": [
+      {
+        "resp": "I'm all about surprises",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762660366034
+      },
+      {
+        "resp": "I'm ready for whatever you bring",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762660366034
+      },
+      {
+        "resp": "Bring it on, I can handle it",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762660366034
+      }
+    ]
+  },
+  "You sent I'm all about surprises Enter": {
+    "items": [
+      {
+        "resp": "You're teasing me now, huh?",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762660387018
+      },
+      {
+        "resp": "Bring on the unexpected",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762660387018
+      },
+      {
+        "resp": "Surprises just make it better",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762660387018
+      }
+    ]
+  },
+  "Wendy Harper I love teasing cuties like u Enter": {
+    "items": [
+      {
+        "resp": "How about some hands-on teasing?",
+        "stage": "rapport",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762660420730
+      },
+      {
+        "resp": "Bring it on, I love a challenge",
+        "stage": "rapport",
+        "heat": 3,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762660420730
+      },
+      {
+        "resp": "Keep it coming, I can handle it",
+        "stage": "rapport",
+        "heat": 3,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762660420730
+      }
+    ]
+  },
+  "You sent How about some hands-on teasing? Enter": {
+    "items": [
+      {
+        "resp": "Tease me more, I dare you",
+        "stage": "rapport",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762660437519
+      },
+      {
+        "resp": "I bet you can handle it",
+        "stage": "rapport",
+        "heat": 3,
+        "rating": null,
+        "reason": "",
+        "ts": 1762660437519
+      },
+      {
+        "resp": "Only if you're ready for me",
+        "stage": "rapport",
+        "heat": 3,
+        "rating": null,
+        "reason": "",
+        "ts": 1762660437519
+      }
+    ]
+  },
+  "Wendy Harper It’ll be all hands on tonight then Enter": {
+    "items": [
+      {
+        "resp": "I'm ready for whatever you bring",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762660461641
+      },
+      {
+        "resp": "I'm all about surprises",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762660461641
+      },
+      {
+        "resp": "You bring the hands, I bring the fun",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762660461641
+      }
+    ]
+  },
+  "Wendy Harper I just thought I’d wna get to know you more Enter": {
+    "items": [
+      {
+        "resp": "Let's dive deeper, what's your vibe?",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762660577584
+      },
+      {
+        "resp": "I’m all ears, what do you want to know?",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762660581392
+      },
+      {
+        "resp": "I'm intrigued, hit me with your best questions",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762660590289
+      }
+    ]
+  },
+  "Wendy Harper What typa talk we talking Enter": {
+    "items": [
+      {
+        "resp": "The kind that keeps us up all night",
+        "stage": "banter",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762661343072
+      },
+      {
+        "resp": "All the juicy details, you in?",
+        "stage": "banter",
+        "heat": 3,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762661343072
+      },
+      {
+        "resp": "Hypothetical adventures, you game?",
+        "stage": "banter",
+        "heat": 3,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762661343072
+      }
+    ]
+  },
+  "Wendy Harper I’ll show you later Enter": {
+    "items": [
+      {
+        "resp": "Bring it on, I'm ready",
+        "stage": "wrap",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762661423986
+      },
+      {
+        "resp": "Can't wait to see that 😉",
+        "stage": "wrap",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762661423986
+      },
+      {
+        "resp": "I'll hold you to that",
+        "stage": "wrap",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762661423986
+      }
+    ]
+  },
+  "Wendy Harper What do u wna see Enter": {
+    "items": [
+      {
+        "resp": "What you look like in the morning",
+        "stage": "banter",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762661464878
+      },
+      {
+        "resp": "That smile up close",
+        "stage": "banter",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762661478040
+      },
+      {
+        "resp": "Your best side, obviously",
+        "stage": "banter",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762661481927
+      }
+    ]
+  },
+  "Wendy Harper So you wanna spend the night? Enter": {
+    "items": [
+      {
+        "resp": "Count me in. I'll bring the snacks",
+        "stage": "logistics",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762661606359
+      },
+      {
+        "resp": "Absolutely, when are you free?",
+        "stage": "logistics",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762661606359
+      },
+      {
+        "resp": "Yes, I’m all in. What time?",
+        "stage": "logistics",
+        "heat": 3,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762661606359
+      }
+    ]
+  },
+  "othello2rizzy Ur lowk fine Enter": {
+    "items": [
+      {
+        "resp": "I see you got good taste",
+        "stage": "banter",
+        "heat": 0,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762661652563
+      },
+      {
+        "resp": "Thanks, you’re not so bad yourself",
+        "stage": "banter",
+        "heat": 0,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762661652563
+      },
+      {
+        "resp": "Flattery will get you everywhere",
+        "stage": "banter",
+        "heat": 0,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762661652563
+      }
+    ]
+  },
+  "othello2rizzy Lemme get a piece of that Enter": {
+    "items": [
+      {
+        "resp": "How about a taste test?",
+        "stage": "wrap",
+        "heat": 1,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762661697517
+      },
+      {
+        "resp": "You sure you can keep up?",
+        "stage": "wrap",
+        "heat": 1,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762661697517
+      },
+      {
+        "resp": "What are you bringing to the table?",
+        "stage": "wrap",
+        "heat": 1,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762661697517
+      }
+    ]
+  },
+  "othello2rizzy I’d love that… wanna see what these cheeks can do? Enter": {
+    "items": [
+      {
+        "resp": "I bet they can do wonders",
+        "stage": "wrap",
+        "heat": 1,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762661740704
+      },
+      {
+        "resp": "Only one way to find out",
+        "stage": "wrap",
+        "heat": 1,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762661740704
+      },
+      {
+        "resp": "I’m intrigued, show me",
+        "stage": "wrap",
+        "heat": 1,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762661740704
+      }
+    ]
+  },
+  "othello2rizzy Dy like what u see Enter": {
+    "items": [
+      {
+        "resp": "I see potential, what else you got?",
+        "stage": "wrap",
+        "heat": 1,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762661774121
+      },
+      {
+        "resp": "Absolutely, but I want more",
+        "stage": "wrap",
+        "heat": 1,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762661775137
+      },
+      {
+        "resp": "Definitely, can’t look away",
+        "stage": "wrap",
+        "heat": 1,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762661779759
+      }
+    ]
+  },
+  "othello2rizzy 33 McDurddle Ave 1 am Enter": {
+    "items": [
+      {
+        "resp": "I’ll be there, ready for fun",
+        "stage": "wrap",
+        "heat": 1,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762661829990
+      },
+      {
+        "resp": "I’ll bring the snacks, you bring the vibes",
+        "stage": "wrap",
+        "heat": 1,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762661834810
+      },
+      {
+        "resp": "Count me in, see you soon",
+        "stage": "wrap",
+        "heat": 1,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762661839331
+      }
+    ]
+  },
+  "othello2rizzy Come lick all on my booty Enter": {
+    "items": [
+      {
+        "resp": "I’ll bring the snacks, you bring the fun",
+        "stage": "wrap",
+        "heat": 3,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762661900029
+      },
+      {
+        "resp": "Sounds tempting, can I taste test first?",
+        "stage": "wrap",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762661900029
+      },
+      {
+        "resp": "Only if you promise not to run",
+        "stage": "wrap",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762661900029
+      }
+    ]
+  },
+  "othello2rizzy Yo come lick ALLLLL on my booty Enter": {
+    "items": [
+      {
+        "resp": "Only if you can handle it",
+        "stage": "wrap",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762661909878
+      },
+      {
+        "resp": "Let’s make it a taste test",
+        "stage": "wrap",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762661909878
+      },
+      {
+        "resp": "I promise to savor every moment",
+        "stage": "wrap",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762661909878
+      }
+    ]
+  },
+  "othello2rizzy Eat my pum while you’re at it Enter": {
+    "items": [
+      {
+        "resp": "Let me bring my A-game",
+        "stage": "wrap",
+        "heat": 3,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762661932539
+      },
+      {
+        "resp": "Ready for round two? 😉",
+        "stage": "wrap",
+        "heat": 3,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762661932539
+      },
+      {
+        "resp": "How about a taste test first?",
+        "stage": "wrap",
+        "heat": 3,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762661932539
+      }
+    ]
+  },
+  "othello2rizzy 5 posts 48 followers 74 following Followed by eli.dags, nayajardinel + 21 more Following Message": {
+    "items": [
+      {
+        "resp": "What’s your secret to those followers?",
+        "stage": "wrap",
+        "heat": 0,
+        "rating": null,
+        "reason": "",
+        "ts": 1762662047931
+      },
+      {
+        "resp": "I see you got a solid crew",
+        "stage": "wrap",
+        "heat": 0,
+        "rating": null,
+        "reason": "",
+        "ts": 1762662047931
+      },
+      {
+        "resp": "Your followers have good taste",
+        "stage": "wrap",
+        "heat": 0,
+        "rating": null,
+        "reason": "",
+        "ts": 1762662047931
+      }
+    ]
+  },
+  "You sent hi Enter": {
+    "items": [
+      {
+        "resp": "What else you got for me?",
+        "stage": "opener",
+        "heat": 1,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762662162967
+      },
+      {
+        "resp": "What’s your favorite flavor?",
+        "stage": "opener",
+        "heat": 1,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762662165546
+      }
+    ]
+  },
+  "othello2rizzy hey Enter": {
+    "items": [
+      {
+        "resp": "What’s on your mind?",
+        "stage": "banter",
+        "heat": 0,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762662180074
+      },
+      {
+        "resp": "What are we getting into today?",
+        "stage": "banter",
+        "heat": 0,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762662180074
+      },
+      {
+        "resp": "You know I’m always down for a challenge",
+        "stage": "banter",
+        "heat": 0,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762662180074
+      }
+    ]
+  },
+  "othello2rizzy Who knows.. Enter": {
+    "items": [
+      {
+        "resp": "Let's find out together",
+        "stage": "banter",
+        "heat": 0,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762662223096
+      },
+      {
+        "resp": "Adventure awaits, you in?",
+        "stage": "banter",
+        "heat": 0,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762662223096
+      },
+      {
+        "resp": "How about a spontaneous plan?",
+        "stage": "banter",
+        "heat": 0,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762662223096
+      }
+    ]
+  },
+  "othello2rizzy 👀👀 Enter": {
+    "items": [
+      {
+        "resp": "I see you’re interested, what’s next?",
+        "stage": "banter",
+        "heat": 0,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762662269654
+      },
+      {
+        "resp": "What’s the plan with those emojis?",
+        "stage": "banter",
+        "heat": 0,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762662269654
+      },
+      {
+        "resp": "What’s got you so intrigued?",
+        "stage": "banter",
+        "heat": 0,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762662269654
+      }
+    ]
+  },
+  "othello2rizzy Idk…. What dy wanna do Enter": {
+    "items": [
+      {
+        "resp": "How about a chill movie night?",
+        "stage": "wrap",
+        "heat": 0,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762662393310
+      },
+      {
+        "resp": "How about we make some plans?",
+        "stage": "wrap",
+        "heat": 1,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762662313284
+      },
+      {
+        "resp": "I'm thinking brunch, you in?",
+        "stage": "wrap",
+        "heat": 1,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762662317457
+      },
+      {
+        "resp": "I’ve got a few ideas, wanna hear them?",
+        "stage": "wrap",
+        "heat": 0,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762662393310
+      },
+      {
+        "resp": "How about a little adventure?",
+        "stage": "wrap",
+        "heat": 0,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762662393310
+      }
+    ]
+  },
+  "othello2rizzy What r u tryna say ?? Enter": {
+    "items": [
+      {
+        "resp": "Just trying to set the mood, you down?",
+        "stage": "wrap",
+        "heat": 0,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762662445589
+      },
+      {
+        "resp": "How about some popcorn and a movie?",
+        "stage": "wrap",
+        "heat": 0,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762662445589
+      },
+      {
+        "resp": "Just saying we should vibe together",
+        "stage": "wrap",
+        "heat": 0,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762662445589
+      }
+    ]
+  },
+  "Wendy Harper What’s up Enter": {
+    "items": [
+      {
+        "resp": "Thinking about that night 😉",
+        "stage": "confirm",
+        "heat": 4,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762665413267
+      },
+      {
+        "resp": "Counting down to our night",
+        "stage": "confirm",
+        "heat": 4,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762665413267
+      },
+      {
+        "resp": "Just planning our pillow talk",
+        "stage": "logistics",
+        "heat": 3,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762663004114
+      },
+      {
+        "resp": "Just thinking about our plans tonight",
+        "stage": "confirm",
+        "heat": 4,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762665413267
+      }
+    ]
+  },
+  "You sent Counting down to our night Enter": {
+    "items": [
+      {
+        "resp": "Ready to make some memories?",
+        "stage": "logistics",
+        "heat": 3,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762663044201
+      },
+      {
+        "resp": "What time should I swing by?",
+        "stage": "logistics",
+        "heat": 3,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762663044201
+      },
+      {
+        "resp": "I’ll bring the cozy vibes",
+        "stage": "logistics",
+        "heat": 3,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762663044201
+      }
+    ]
+  },
+  "You sent im thinking of us making memories Enter": {
+    "items": [
+      {
+        "resp": "Memories that keep us up all night",
+        "stage": "rapport",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762663072735
+      },
+      {
+        "resp": "Ready for some unforgettable moments?",
+        "stage": "rapport",
+        "heat": 3,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762663072735
+      },
+      {
+        "resp": "Excited to see what we create",
+        "stage": "rapport",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762663072735
+      }
+    ]
+  },
+  "Wendy Harper So what are you trying to say Enter": {
+    "items": [
+      {
+        "resp": "I’m suggesting we get closer tonight",
+        "stage": "rapport",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762663104013
+      },
+      {
+        "resp": "Ready for some late-night adventures?",
+        "stage": "rapport",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762663104013
+      },
+      {
+        "resp": "How about we make some sparks fly?",
+        "stage": "rapport",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762663104013
+      }
+    ]
+  },
+  "You sent I’m suggesting we get closer tonight Enter": {
+    "items": [
+      {
+        "resp": "Let's make it a night to remember",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762663192086
+      },
+      {
+        "resp": "Ready for some unforgettable moments?",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762663192086
+      },
+      {
+        "resp": "How about some late-night fun?",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762663192086
+      }
+    ]
+  },
+  "Wendy Harper Oh I’m gonna remember this Enter": {
+    "items": [
+      {
+        "resp": "Just wait till tonight then",
+        "stage": "wrap",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762663239165
+      },
+      {
+        "resp": "Memories that leave a mark 😉",
+        "stage": "wrap",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762663239165
+      },
+      {
+        "resp": "I plan to make it unforgettable",
+        "stage": "wrap",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762663239165
+      }
+    ]
+  },
+  "Wendy Harper I want u to leave ur mark on me Enter": {
+    "items": [
+      {
+        "resp": "I plan to make that happen",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762663266940
+      },
+      {
+        "resp": "Let's make it unforgettable, trust me",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762663266940
+      },
+      {
+        "resp": "I like the sound of that 😉",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762663266940
+      }
+    ]
+  },
+  "Wendy Harper Oh you’ll love some other sounds you make me do later Enter": {
+    "items": [
+      {
+        "resp": "I’m all about those sounds😉",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762663304693
+      },
+      {
+        "resp": "I'm ready to hear them all",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762663304693
+      },
+      {
+        "resp": "Sounds like a challenge, I'm in",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762663304693
+      }
+    ]
+  },
+  "Wendy Harper You like a moaner or a screamer? Bc I be both Enter": {
+    "items": [
+      {
+        "resp": "I can’t wait to find out 😉",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762663354999
+      },
+      {
+        "resp": "Both sounds like a win to me",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762663354999
+      },
+      {
+        "resp": "I’m intrigued by both, what about you?",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762663354999
+      }
+    ]
+  },
+  "Wendy Harper I guess you hear both then Enter": {
+    "items": [
+      {
+        "resp": "I love a good duet",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762663395970
+      },
+      {
+        "resp": "Sounds like a symphony to me",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762663395970
+      },
+      {
+        "resp": "Bring on the surround sound",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762663395970
+      }
+    ]
+  },
+  "Wendy Harper Do you ? Enter": {
+    "items": [
+      {
+        "resp": "I definitely do, especially with you",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762663430851
+      },
+      {
+        "resp": "Absolutely, I can't resist a good show",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762663430851
+      },
+      {
+        "resp": "Only if you’re ready to perform",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762663430851
+      }
+    ]
+  },
+  "Wendy Harper I’ll do anything you want me to Enter": {
+    "items": [
+      {
+        "resp": "I want you to come over now",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762663480385
+      },
+      {
+        "resp": "Let’s start with some practice tonight",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762663480385
+      },
+      {
+        "resp": "How about a private rehearsal?",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762663480385
+      }
+    ]
+  },
+  "Wendy Harper How am I gonna get there Enter": {
+    "items": [
+      {
+        "resp": "Order a ride, I’ll meet you outside",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762663520530
+      },
+      {
+        "resp": "I’ll come pick you up",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762663520530
+      },
+      {
+        "resp": "I’ll send a ride for you",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762663520530
+      }
+    ]
+  },
+  "You sent I’ll come pick you up Enter": {
+    "items": [
+      {
+        "resp": "Let me know when you're dressed",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762663543264
+      },
+      {
+        "resp": "What time are you ready?",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762663543264
+      },
+      {
+        "resp": "Ready for a little adventure?",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762663543264
+      }
+    ]
+  },
+  "Wendy Harper I’m all dressed already Enter": {
+    "items": [
+      {
+        "resp": "Perfect, I'll be there in 10",
+        "stage": "logistics",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762663574011
+      },
+      {
+        "resp": "On my way, ready for our duet?",
+        "stage": "logistics",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762663574011
+      },
+      {
+        "resp": "Door’s open for you, come on over",
+        "stage": "logistics",
+        "heat": 3,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762663574011
+      }
+    ]
+  },
+  "Wendy Harper You’ll love what I’m wearing Enter": {
+    "items": [
+      {
+        "resp": "Is it too much to handle? 😏",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762663609170
+      },
+      {
+        "resp": "Can't wait to see you in it",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762663609170
+      },
+      {
+        "resp": "You know how to tease, don't you?",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762663609170
+      }
+    ]
+  },
+  "You sent You know how to tease, don't you? Enter": {
+    "items": [
+      {
+        "resp": "I hope it's as tempting as you are",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762663636556
+      }
+    ]
+  },
+  "Wendy Harper I love teasing hot ppl like u Enter": {
+    "items": [
+      {
+        "resp": "How about some hands-on teasing?",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762663659888
+      },
+      {
+        "resp": "I can handle the heat, bring it on",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762663659888
+      },
+      {
+        "resp": "Hot people need to meet up soon",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762663659888
+      }
+    ]
+  },
+  "Wendy Harper I love hands on Enter": {
+    "items": [
+      {
+        "resp": "I like your style, let’s explore",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762663705370
+      },
+      {
+        "resp": "Perfect, let's get hands-on then",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762663705370
+      },
+      {
+        "resp": "Ready for some fun?",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762663705370
+      }
+    ]
+  },
+  "Wendy Harper I want you to explore me Enter": {
+    "items": [
+      {
+        "resp": "I plan to, where should I start?",
+        "stage": "banter",
+        "heat": 4,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762665138844
+      },
+      {
+        "resp": "Want me to suggest a time?",
+        "stage": "banter",
+        "heat": 4,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762665138844
+      },
+      {
+        "resp": "Happy to—what works for you?",
+        "stage": "banter",
+        "heat": 4,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762665138844
+      }
+    ]
+  },
+  "Wendy Harper I want you do do unspeakable things to me Enter": {
+    "items": [
+      {
+        "resp": "Let's make those things happen",
+        "stage": "banter",
+        "heat": 4,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762665266056
+      },
+      {
+        "resp": "Happy to—what works for you?",
+        "stage": "banter",
+        "heat": 4,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762665266056
+      },
+      {
+        "resp": "Want me to suggest a time?",
+        "stage": "banter",
+        "heat": 4,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762665266056
+      }
+    ]
+  },
+  "Wendy Harper Yeah? When can you do this to me Enter": {
+    "items": [
+      {
+        "resp": "How about tomorrow night?",
+        "stage": "logistics",
+        "heat": 4,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762665294342
+      },
+      {
+        "resp": "Sunday afternoon, your place?",
+        "stage": "logistics",
+        "heat": 4,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762665294342
+      },
+      {
+        "resp": "Want me to suggest a time?",
+        "stage": "logistics",
+        "heat": 4,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762665294342
+      }
+    ]
+  },
+  "Wendy Harper Why don’t we start a little earlier Enter": {
+    "items": [
+      {
+        "resp": "I can do 6:30, sound good?",
+        "stage": "confirm",
+        "heat": 4,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762665329133
+      },
+      {
+        "resp": "How about 7? I’ll bring the vibes",
+        "stage": "confirm",
+        "heat": 4,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762665329133
+      },
+      {
+        "resp": "Want me to suggest a time?",
+        "stage": "confirm",
+        "heat": 4,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762665329133
+      }
+    ]
+  },
+  "You sent Just thinking about our plans tonight Enter": {
+    "items": [
+      {
+        "resp": "How about 8? Just us two",
+        "stage": "confirm",
+        "heat": 4,
+        "rating": null,
+        "reason": "",
+        "ts": 1762665435618
+      },
+      {
+        "resp": "Want me to suggest a time?",
+        "stage": "confirm",
+        "heat": 4,
+        "rating": null,
+        "reason": "",
+        "ts": 1762665435618
+      },
+      {
+        "resp": "Happy to—what works for you?",
+        "stage": "confirm",
+        "heat": 4,
+        "rating": null,
+        "reason": "",
+        "ts": 1762665435618
+      }
+    ]
+  },
+  "Wendy Harper Ooh what plans Enter": {
+    "items": [
+      {
+        "resp": "How about drinks tonight?",
+        "stage": "logistics",
+        "heat": 2,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762665456397
+      },
+      {
+        "resp": "Happy to—what works for you?",
+        "stage": "logistics",
+        "heat": 2,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762665456397
+      },
+      {
+        "resp": "Want me to suggest a time?",
+        "stage": "logistics",
+        "heat": 2,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762665456397
+      }
+    ]
+  },
+  "You sent How about drinks tonight? Enter": {
+    "items": [
+      {
+        "resp": "Still down for drinks tonight?",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762665487226
+      },
+      {
+        "resp": "I can pick the spot, you in?",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762665487226
+      },
+      {
+        "resp": "Want me to suggest a time?",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762665487226
+      }
+    ]
+  },
+  "Wendy Harper So what are we gonna do afterrr Enter": {
+    "items": [
+      {
+        "resp": "I’m suggesting we get closer tonight",
+        "stage": "confirm",
+        "heat": 2,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762665525689
+      },
+      {
+        "resp": "Ready for some late-night adventures?",
+        "stage": "confirm",
+        "heat": 2,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762665525689
+      },
+      {
+        "resp": "How about we make some sparks fly?",
+        "stage": "confirm",
+        "heat": 2,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762665525689
+      }
+    ]
+  },
+  "Wendy Harper Physically or? Enter": {
+    "items": [
+      {
+        "resp": "Both sound fun, don’t you think?",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762665557453
+      },
+      {
+        "resp": "A little of both, what do you prefer?",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762665557453
+      },
+      {
+        "resp": "Definitely physically, you down?",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762665557453
+      }
+    ]
+  },
+  "Wendy Harper Aw you wanna get to know me Enter": {
+    "items": [
+      {
+        "resp": "Can’t resist getting to know you",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762665610253
+      },
+      {
+        "resp": "I’m curious, what’s your story?",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762665610253
+      },
+      {
+        "resp": "Absolutely, you seem intriguing",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762665610253
+      }
+    ]
+  },
+  "Wendy Harper Oh I like how you talk Enter": {
+    "items": [
+      {
+        "resp": "Just wait till we meet, even better",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762665638137
+      },
+      {
+        "resp": "Happy to—what works for you?",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762665638137
+      },
+      {
+        "resp": "Want me to suggest a time?",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762665638137
+      }
+    ]
+  },
+  "Wendy Harper Now you’re making me feel things I shouldn’t Enter": {
+    "items": [
+      {
+        "resp": "That's the plan, isn't it?",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762665670362
+      },
+      {
+        "resp": "Happy to—what works for you?",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762665670362
+      },
+      {
+        "resp": "Want me to suggest a time?",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762665670362
+      }
+    ]
+  },
+  "You sent That's the plan, isn't it? Enter": {
+    "items": [
+      {
+        "resp": "Can’t help but stir your feelings",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762665692392
+      },
+      {
+        "resp": "Glad we’re on the same page",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762665692392
+      },
+      {
+        "resp": "That’s the goal, isn’t it?",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762665692392
+      }
+    ]
+  },
+  "You sent Can’t help but stir your feelings Enter": {
+    "items": [
+      {
+        "resp": "Let’s see how deep those feelings go",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762665711213
+      },
+      {
+        "resp": "Ready for a wild ride together?",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": null,
+        "reason": "",
+        "ts": 1762665711213
+      },
+      {
+        "resp": "Feelings are meant to be stirred",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": null,
+        "reason": "",
+        "ts": 1762665711213
+      }
+    ]
+  },
+  "Wendy Harper You’ll stir more than just my feelings Enter": {
+    "items": [
+      {
+        "resp": "I’m all about stirring the pot 😉",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762665721015
+      },
+      {
+        "resp": "Ready to turn up the heat?",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762665721015
+      },
+      {
+        "resp": "What else you got in mind?",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762665721015
+      }
+    ]
+  },
+  "Wendy Harper You’ll love the honey that leaks out of it Enter": {
+    "items": [
+      {
+        "resp": "I’m ready for a taste test 😏",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762665783167
+      },
+      {
+        "resp": "Sweet and sticky, just how I like it",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762665783167
+      },
+      {
+        "resp": "I’ll bring the biscuits for that honey",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762665783167
+      }
+    ]
+  },
+  "You sent I’m ready for a taste test Enter": {
+    "items": [
+      {
+        "resp": "I like my honey sweet, just like you",
+        "stage": "rapport",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762667524481
+      },
+      {
+        "resp": "Count me in, I’m a honey connoisseur",
+        "stage": "rapport",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762667524481
+      },
+      {
+        "resp": "Let me know when, I’ll bring the spoon",
+        "stage": "rapport",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762667524481
+      }
+    ]
+  },
+  "You sent I like my honey sweet, just like you Enter": {
+    "items": [
+      {
+        "resp": "I’m ready to indulge, when's the tasting?",
+        "stage": "rapport",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762667554228
+      },
+      {
+        "resp": "Is that an invitation to your kitchen?",
+        "stage": "rapport",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762667554228
+      },
+      {
+        "resp": "Let’s see if it’s as sweet as it sounds",
+        "stage": "rapport",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762667554228
+      }
+    ]
+  },
+  "Wendy Harper Heyyyy I want you so bad Enter": {
+    "items": [
+      {
+        "resp": "Let’s turn that want into a plan",
+        "stage": "rapport",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762673961965
+      },
+      {
+        "resp": "Want me to suggest a time?",
+        "stage": "rapport",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762673961965
+      },
+      {
+        "resp": "Happy to—what works for you?",
+        "stage": "rapport",
+        "heat": 3,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762673961965
+      }
+    ]
+  },
+  "Wendy Harper So what time are you gna pick me up Enter": {
+    "items": [
+      {
+        "resp": "I’ll swing by at 7:30, sound good?",
+        "stage": "logistics",
+        "heat": 2,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762674052221
+      },
+      {
+        "resp": "What’s good for you, 6 or 7?",
+        "stage": "logistics",
+        "heat": 2,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762674052221
+      },
+      {
+        "resp": "Want me to suggest a time?",
+        "stage": "logistics",
+        "heat": 2,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762674052221
+      }
+    ]
+  },
+  "Wendy Harper Yeah 7:30 works for me, what r u tryna do? Enter": {
+    "items": [
+      {
+        "resp": "Dinner and a little adventure after",
+        "stage": "confirm",
+        "heat": 2,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762674090131
+      },
+      {
+        "resp": "Grab food, see where the night takes us",
+        "stage": "confirm",
+        "heat": 2,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762674090131
+      },
+      {
+        "resp": "Want me to suggest a time?",
+        "stage": "confirm",
+        "heat": 2,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762674090131
+      }
+    ]
+  },
+  "Wendy Harper I love an adventure Enter": {
+    "items": [
+      {
+        "resp": "I like your style, let’s explore",
+        "stage": "confirm",
+        "heat": 2,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762674147777
+      },
+      {
+        "resp": "Perfect, let's get hands-on then",
+        "stage": "confirm",
+        "heat": 2,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762674147777
+      },
+      {
+        "resp": "Ready for some fun?",
+        "stage": "confirm",
+        "heat": 2,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762674147777
+      }
+    ]
+  },
+  "Wendy Harper So you’re gonna put ur hands on me? Enter": {
+    "items": [
+      {
+        "resp": "Absolutely, but only with consent",
+        "stage": "confirm",
+        "heat": 4,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762674183845
+      },
+      {
+        "resp": "Only if you want me to",
+        "stage": "confirm",
+        "heat": 4,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762674183845
+      },
+      {
+        "resp": "Depends on how adventurous you feel",
+        "stage": "confirm",
+        "heat": 4,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762674183845
+      }
+    ]
+  },
+  "You sent Only if you want me to Enter": {
+    "items": [
+      {
+        "resp": "I want you to come over now",
+        "stage": "confirm",
+        "heat": 4,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762674200483
+      },
+      {
+        "resp": "Let’s start with some practice tonight",
+        "stage": "confirm",
+        "heat": 4,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762674200483
+      },
+      {
+        "resp": "How about a private rehearsal?",
+        "stage": "confirm",
+        "heat": 4,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762674200483
+      }
+    ]
+  },
+  "Wendy Harper Well practice all night long Enter": {
+    "items": [
+      {
+        "resp": "Happy to—what works for you?",
+        "stage": "confirm",
+        "heat": 4,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762674244959
+      },
+      {
+        "resp": "Want me to suggest a time?",
+        "stage": "confirm",
+        "heat": 4,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762674244959
+      },
+      {
+        "resp": "Sounds like a plan, I'm in",
+        "stage": "confirm",
+        "heat": 4,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762674244959
+      }
+    ]
+  },
+  "You sent Want me to suggest a time? Enter": {
+    "items": [
+      {
+        "resp": "How does 8 sound for some fun?",
+        "stage": "confirm",
+        "heat": 4,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762674263791
+      },
+      {
+        "resp": "Let’s dive into practice at 7, deal?",
+        "stage": "confirm",
+        "heat": 4,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762674263791
+      },
+      {
+        "resp": "Want me to suggest a time?",
+        "stage": "confirm",
+        "heat": 4,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762674263791
+      }
+    ]
+  },
+  "You sent How does 8 sound for some fun? Enter": {
+    "items": [
+      {
+        "resp": "See you at 8, I'll bring the energy",
+        "stage": "confirm",
+        "heat": 4,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762674294522
+      },
+      {
+        "resp": "8 it is, get ready for a wild time",
+        "stage": "confirm",
+        "heat": 4,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762674294522
+      },
+      {
+        "resp": "Want me to suggest a time?",
+        "stage": "confirm",
+        "heat": 4,
+        "rating": "N",
+        "reason": "",
+        "ts": 1762674294522
+      }
+    ]
+  },
+  "Wendy Harper How wild we talking ? Enter": {
+    "items": [
+      {
+        "resp": "Wild enough to keep us up all night",
+        "stage": "confirm",
+        "heat": 2,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762712960862
+      },
+      {
+        "resp": "Wild enough to make memories",
+        "stage": "confirm",
+        "heat": 2,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762712960862
+      },
+      {
+        "resp": "Wild enough for a little mischief",
+        "stage": "confirm",
+        "heat": 2,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762712960862
+      },
+      {
+        "resp": "Wild enough to break a few rules",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762712524143
+      },
+      {
+        "resp": "Wild enough to keep it interesting",
+        "stage": "confirm",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1762712524143
+      }
+    ]
+  }
+}
