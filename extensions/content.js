@@ -1,8 +1,9 @@
-// content.js — static overlay; copy keeps UI unchanged; top-left placement; shows "thinking…"; outlines analyzed msgs; 20-turn context
 const MAX_CHARS = 350,
-  MAX_TURNS = 20,
+  MAX_TURNS = 10,
   COOLDOWN = 1800;
 const TEST_MODE = false;
+
+const SHOW_SCAN_OUTLINE = true;
 
 /* ---------------- Overlay ---------------- */
 function overlay() {
@@ -54,7 +55,7 @@ function overlay() {
       () => (launcher.style.transform = "translateY(-1px) scale(1.03)")
     );
 
-    // Panel (expanded state)
+    // Panel
     const panel = document.createElement("div");
     panel.id = "qr-panel";
     Object.assign(panel.style, wingmanPanelStyle());
@@ -87,7 +88,7 @@ function overlay() {
             "#a855f7"
           )}">Reset</button>
           <div style="margin-left:auto;display:flex;align-items:center;gap:8px;">
-            <button id="qr-close" style="${closeBtnStyle()}">Take it from here</button>
+            <button id="qr-close" style="${closeBtnStyle()}">take it from here</button>
           </div>
         </div>
       </div>
@@ -123,9 +124,9 @@ function bodyEl() {
   return panel || document.getElementById("qr-body");
 }
 
-/* ---------- Wingman UI helpers (pure UI) ---------- */
+/* ---------- Wingman UI helpers  ---------- */
 function wingmanPanelStyle() {
-  // 15% narrower than original (42vw/520px → 35.7vw/442px)
+
   return {
     position: "relative",
     width: "min(35.7vw, 442px)",
@@ -455,7 +456,7 @@ function hypeToast(text) {
   }, 1200);
 }
 
-/* Heat emojis pop (visual only) */
+
 function spawnHeatEmojis(heat) {
   if (!__wingmanOpen) return;
   const root = overlay().querySelector("#qr-heat-aura");
@@ -540,7 +541,7 @@ async function copyText(text) {
     document.execCommand("copy");
     document.body.removeChild(ta);
   }
-  showToast("✅ Copied — paste (⌘V)!");
+  showToast(" Copied!");
 }
 
 // NEW ---- Commit snapshot state ----
@@ -577,10 +578,10 @@ function commitSnapshot(p) {
       rating: it.rating,
       reason: it.reason,
     })),
-  }).then((resp) => showToast(resp?.ok ? "✅ Committed" : "Commit failed"));
+  }).then((resp) => showToast(resp?.ok ? " Committed" : "Commit failed"));
 }
 
-/* ---------------- Site adapters ---------------- */
+/* ---------------- SITE ADAPTERS ---------------- */
 const ADAPTERS = {
   "instagram.com": {
     threadId: () => location.pathname,
@@ -871,6 +872,11 @@ function clearOutlines() {
   __hiBoxes.length = 0;
 }
 function drawOutlines(nodes) {
+  //  guard to disable outlines entirely
+  if (!SHOW_SCAN_OUTLINE) {
+    clearOutlines();
+    return;
+  }
   clearOutlines();
   nodes.forEach((el) => {
     const r = el.getBoundingClientRect();
@@ -1047,7 +1053,7 @@ function renderStatic(heat, stage, options, spiceDbg) {
   lastRendered = { heat, stage, options: options.slice() };
 }
 
-// --- NEW: ensure history ends with 'them' before sending ---
+// --- ensure history ends with 'them' before sending ---
 function trimTailToThem(arr) {
   const copy = sanitizeCtx(arr).slice();
   while (copy.length && copy[copy.length - 1].role === "you") copy.pop();
@@ -1197,9 +1203,4 @@ if (!bodyEl().innerHTML) {
       requestSuggestions(bootTrim);
     }
   }, 50);
-}
-
-/* ---------------- Utility: style string -> object polyfill ---------------- */
-function applyStyles(el, styleStr) {
-  // reserved for future
 }

@@ -8,7 +8,7 @@ from pydantic import BaseModel
 from dotenv import load_dotenv
 
 # ================== ENV ==================
-load_dotenv(override=True)
+load_dotenv()
 OPENAI_API_KEY = (os.getenv("OPENAI_API_KEY") or "").strip()
 if not OPENAI_API_KEY:
     raise RuntimeError("OPENAI_API_KEY not set")
@@ -16,9 +16,9 @@ if not OPENAI_API_KEY:
 MODEL        = os.getenv("QR_MODEL", "gpt-4o-mini")
 TEMPERATURE  = float(os.getenv("QR_TEMPERATURE", "0.25"))
 MAX_TOKENS   = int(os.getenv("QR_MAX_TOKENS", "220"))
-USER_NAME    = os.getenv("QUICKRIZZ_NAME", "Daniel").strip()
-USER_STYLE   = os.getenv("QUICKRIZZ_STYLE", "playful, concise, confident").strip()
-
+USER_NAME    = os.getenv("QUICKRIZZ_NAME", "Wingman").strip()
+USER_STYLE   = os.getenv("QUICKRIZZ_STYLE", "playful, concise, confident, flirty").strip()
+CONTEXT_WINDOW = 10 # how many prior messages to consider
 # anti-429 controls
 MIN_INTERVAL_MS   = int(os.getenv("QR_MIN_INTERVAL_MS", "2500"))
 MAX_RETRIES       = int(os.getenv("QR_MAX_RETRIES", "4"))
@@ -85,13 +85,13 @@ class SuggestReq(BaseModel):
     context: List[Msg] = []
     n: int = 3
     site: Optional[str] = None
-    thread: Optional[str] = None
+    thread: Optional[str] = None  #what does optional do here
     spice: Optional[int] = None
 
 class FeedbackReq(BaseModel):
     stage: str
     latest: str
-    option: str
+    option: str                                                 #whats difference between feedbackReq and commitReq
     label: str = "clicked"    # also accept "up"/"down"
     meta: Optional[Dict[str, Any]] = None
 
@@ -111,7 +111,7 @@ def stitched(history: List[Msg], k=15) -> str:
     xs = history[-k:]
     return "\n".join(f"{m.role}: {clamp(m.text)}" for m in xs)
 
-def stitched_k(history: List[Msg], k=20) -> str:
+def stitched_k(history: List[Msg], k=CONTEXT_WINDOW) -> str:
     xs = history[-k:]
     return "\n".join(f"{m.role}: {clamp(m.text)}" for m in xs)
 
@@ -150,13 +150,13 @@ _SL_DEFAULT = {
   "tfti":"thanks for the invite","otp":"on the phone","pov":"point of view","ft":"facetime","irl":"in real life",
   "yk":"you know","ykwim":"you know what i mean","ymmv":"your mileage may vary",
   "yw":"you're welcome","np":"no problem","glhf":"good luck have fun","gg":"good game", "gyatt": "butt", "chonk":"big", 
-  "pum": "vagina", "pussy": "vagina"
+  "pum": "vagina", "pussy": "vagina", "dih" : "penis", 
 }
 def _load_slang():
     try:
         with open(SLANG_PATH, "r", encoding="utf-8") as f:
             data = json.load(f)
-            if isinstance(data, dict) and data:
+            if isinstance(data, dict) and data:                             # checks if data is in slang dictionary
                 return {str(k).lower(): str(v).lower() for k,v in data.items()}
     except Exception:
         pass
@@ -167,16 +167,16 @@ _keys = sorted(_SLANG.keys(), key=len, reverse=True)
 _pat  = re.compile(r'\b(' + '|'.join(re.escape(k).replace(r'\;',';') for k in _keys) + r')\b', re.I)
 def expand_slang(s: str) -> str:
     if not s: return s
-    def repl(m):
+    def repl(m):                #make it so that it knows what lolllll is or something, rn it just sees lol
         k = m.group(0).lower()
         return _SLANG.get(k, k)
     return _pat.sub(repl, s)
 
-def stitched_k_exp(history: List[Msg], k=20) -> str:
+def stitched_k_exp(history: List[Msg], k=CONTEXT_WINDOW) -> str:
     xs = history[-k:]
     return "\n".join(f"{m.role}: {expand_slang(clamp(m.text))}" for m in xs)
 
-# ===== Memory index (approx lookup from qr_commits.json) — NEW =====
+# ===== Memory index (approx lookup from qr_commits.json) =====
 _WORD_RX = re.compile(r"[a-z0-9']+")
 def _norm_text(s: str) -> str:
     s = expand_slang(clamp(s).lower())
@@ -274,7 +274,7 @@ class MemIndex:
 
 MEM = MemIndex(COMMITS_PATH)
 
-# ---- Style rubric (unchanged) + exemplars ----
+# ---- Style rubric + exemplars ----
 STYLE_RUBRIC = """
 You are a gen Z dating GURU. You know exactly how to  reply to dating app messages written by people in their late teens
 and early twenties.
@@ -327,7 +327,7 @@ HEDGES         = r"\b(maybe|kinda|sort of|might|could|i guess)\b"
 WINK_EMOJI_RX  = r"[😉😏]"
 INNUENDO_RX    = r"\b(cuddle|wild|kiss|closer|blanket|spoon|massage|back rub|lap|whisper|stay over|come over|movie night|truth or dare)\b"
 
-# ====== EXTRA HEAT CUES (expanded) ======
+# ====== EXTRA HEAT CUES  ======
 DESIRE_RX     = re.compile(r"\b(want you|need you|can'?t wait|begging for|crave|dying to|i aim to please|please me)\b", re.I)
 TOUCH_RX      = re.compile(r"\b(kiss|touch|feel|grab|pull you|hold (you|me)|hands? on|lips?|neck|waist|hips?)\b", re.I)
 PROX_RX       = re.compile(r"\b(come over|pull up|at (my|ur|your) place|now|tonight|after|later|swing by|on my way)\b", re.I)
@@ -339,7 +339,7 @@ COMMAND_RX    = re.compile(r"\b(come|pull|kiss|bring|meet|slide|sneak|decide|boo
 TEASE_RX      = re.compile(r"\b(tease|teasing|make you beg|earn it|behave|be good)\b", re.I)
 WINK_OR_SMIRK = re.compile(r"[😉😏]|;\)", re.U)
 
-# NEW: erotic/consent questions & readiness
+# erotic/consent questions & readiness
 EROTIC_Q_RX   = re.compile(r"\b(what are you (gonna|going to) do to me|how (are|r) you (gonna|going to) please me|how will you please me)\b", re.I)
 READINESS_RX  = re.compile(r"\b(i('|’)?m so ready|i('?m)? ready|can'?t wait|don'?t keep me waiting)\b", re.I)
 INVITE_RX     = re.compile(r"\b(when are we meeting|so when|let'?s meet|set a time)\b", re.I)
@@ -354,7 +354,7 @@ IDEA_TRIGGER   = re.compile(r"\b(idea|plan|what('?s|s)\s*the\s*plan|what.*doing|
 BAD_GREETS_RX   = re.compile(r"\b(he+y+|hi+i+)\b", re.I)   # e.g., heyyy, hiii
 OPENER_BAN_RX   = re.compile(r"\b(weekend|plan|ready|fun|meet|date|tonight|tmr|tomorrow|call|book|pick|movie|walk|come over)\b", re.I)
 
-# ===== Spice-4 triggers (NEW) =====
+# ===== Spice-4 triggers =====
 SPICE4_LIST = [
   r"\bexplore me\b",
   r"\bmake me( yours)?\b",
@@ -402,11 +402,7 @@ def liked_exemplars(k: int = 6, stage: Optional[str] = None):
 
 # ---- Opener fallbacks ----
 OPENER_FALLBACKS = [
-    "hey there 😊",
-    "how’s it going?",
-    "what’s up?",
-    "how’s your day going?",
-    "how’s your week been?",
+    "Opener Fallback Triggered"
 ]
 
 # ========= SCORER =========
@@ -489,20 +485,20 @@ async def openai_chat_json(messages, temperature=0.7, max_tokens=120, timeout=18
     except Exception:
         return {}
 
-# ================== SPICE (WINDOWED, RICH CUES) ==================
-def infer_spice(history: List[Msg], latest: str, k:int=20) -> Tuple[int, Dict[str,Any]]:
+# ================== SPICE CUES ==================
+def infer_spice(history: List[Msg], latest: str, k:int=CONTEXT_WINDOW) -> Tuple[int, Dict[str,Any]]: #infers spice level from 0-4 based on cues
     """
     Heuristic heat detector over last k turns:
     - weighted cues: desire, touch, proximity, body, permission, exclusivity, sensory, command, tease, wink,
       erotic questions, readiness/consent, invites
     - reciprocity bonus (both roles hot)
     - softer cooling from RED_DOWN to avoid false drops
-    - NEW: Spice-4 triggers escalate above level 3 when explicit invite phrases appear
+    - Spice-4 triggers escalate above level 3 when explicit invite phrases appear
     """
     window = history[-k:]
     window_text = " ".join(m.text for m in window if m.text).lower()
-    window_text = expand_slang(window_text)  # NEW
-    latest_low  = expand_slang((latest or "").lower())  # NEW
+    window_text = expand_slang(window_text)  
+    latest_low  = expand_slang((latest or "").lower()) 
 
     score = 1.0
     hits: List[Tuple[str,str]] = []
@@ -539,17 +535,17 @@ def infer_spice(history: List[Msg], latest: str, k:int=20) -> Tuple[int, Dict[st
         hits.append(("mutual", str(mutual)))
 
     # consecutive-hot bonus
-    last4 = [m for m in window if m.text][-4:]
-    hot_theirs = sum(1 for m in last4 if m.role=="them" and (
+    last4 = [m for m in window if m.text][-4:] # if last 4 consecutive messages from them are spicy, gives streak bonus 
+    hot_theirs = sum(1 for m in last4 if m.role=="them" and ( 
         DESIRE_RX.search(m.text.lower()) or TOUCH_RX.search(m.text.lower()) or
         EROTIC_Q_RX.search(m.text.lower()) or READINESS_RX.search(m.text.lower()) or
-        WINK_OR_SMIRK.search(m.text)
+        WINK_OR_SMIRK.search(m.text) 
     ))
-    if hot_theirs >= 2:
+    if hot_theirs >= 2: #if at least 2 of their last 4 messages are spicy, add .8 to score
         score += 0.8
         hits.append(("streak", str(hot_theirs)))
 
-    # legacy soft cues
+    # legacy soft cues 
     red_hit = False
     if GREEN_UP.search(window_text): score += 0.6; hits.append(("green_up","1"))
     if RED_DOWN.search(window_text): 
@@ -560,16 +556,17 @@ def infer_spice(history: List[Msg], latest: str, k:int=20) -> Tuple[int, Dict[st
         score += 0.8; hits.append(("latest_hot","1"))
 
     # thresholds tuned (base 0–3)
-    if score >= 2.6: lvl = 3
+    if score >= 3.5: lvl = 4
+    elif score >= 2.6: lvl = 3
     elif score >= 1.8: lvl = 2
     elif score >= 1.1: lvl = 1
     else: lvl = 0
 
-    # ---- DEFAULT HEAT FLOOR unless cooling cues (NEW) ----
+    # ---- DEFAULT HEAT FLOOR unless cooling cues --
     if not red_hit:
         lvl = max(lvl, MIN_SPICE_FLOOR)
 
-    # ---- Spice-4 escalation on explicit invites (NEW) ----
+    # ---- Spice-4 escalation on explicit invites  ----
     if lvl >= 3 and (SPICE4_RX.search(window_text) or SPICE4_RX.search(latest_low)):
         lvl = 4
         hits.append(("spice4", "trigger"))
@@ -579,7 +576,7 @@ def infer_spice(history: List[Msg], latest: str, k:int=20) -> Tuple[int, Dict[st
     return lvl, dbg
 
 def temp_for_spice(spice: int) -> float:
-    return {0: 0.2, 1: 0.35, 2: 0.5, 3: 0.65, 4: 0.75}.get(int(spice), 0.35)
+    return {0: 0.2, 1: 0.35, 2: 0.5, 3: 0.65, 4: 0.75}.get(int(spice), 0.35) #what does this do
 
 def mode_guide(spice: int) -> str:
     guides = {
@@ -591,12 +588,14 @@ def mode_guide(spice: int) -> str:
     }
     return guides.get(int(spice), guides[1])
 
-# ================== STAGE (FORWARD-ONLY) ==================
+# ================== STAGE : FORWARD ONLY ==================
 STAGE_INDEX = {s:i for i,s in enumerate(STAGES)}
 
-def heuristic_stage_from_history(history: List[Msg]) -> Tuple[str, Dict[str,Any]]:
-    text = " ".join((m.text or "") for m in history[-20:]).lower()
-    text = expand_slang(text)  # NEW
+def heuristic_stage_from_history(history: List[Msg]) -> Tuple[str, Dict[str,Any]]: # finds stage based on keywords
+     #this is bugged gotta fix this make it a general wieght not just if it discovers a word
+     #maybe have a floor, like cr arenas. if you get to a later stage, you cant go back
+    text = " ".join((m.text or "") for m in history[-CONTEXT_WINDOW:]).lower()
+    text = expand_slang(text)  
     idx = 0
     why = []
     if re.search(r"\b(hey|hi|hello)\b", text): idx = max(idx, STAGE_INDEX["opener"])
@@ -618,9 +617,9 @@ def heuristic_stage_from_history(history: List[Msg]) -> Tuple[str, Dict[str,Any]
 async def classify_stage(history: List[Msg], latest: str) -> Tuple[str, Dict[str,Any]]:
     heur_stage, heur_dbg = heuristic_stage_from_history(history)
     sys = "Label the dating chat stage with one token: " + ", ".join(STAGES) + ". Respond with just the token. Prefer later stage when mixed."
-    hist_exp = stitched_k_exp(history, 20)  # NEW
-    latest_exp = expand_slang(latest)       # NEW
-    usr = f"HISTORY(last 20):\n{hist_exp}\n\nLATEST:\n{latest_exp}\n\nStage:"
+    hist_exp = stitched_k_exp(history, CONTEXT_WINDOW)  
+    latest_exp = expand_slang(latest)       
+    usr = f"HISTORY(last {CONTEXT_WINDOW}):\n{hist_exp}\n\nLATEST:\n{latest_exp}\n\nStage:"
     out = await openai_chat_async([{"role":"system","content":sys},{"role":"user","content":usr}],
                                   temperature=0.1, max_tokens=5)
     token = (out.strip().split()[0] if out else "").lower()
@@ -633,14 +632,14 @@ async def classify_stage(history: List[Msg], latest: str) -> Tuple[str, Dict[str
 # ================== IDEA (LLM-SUMMARIZED) ==================
 async def extract_idea(history: List[Msg], latest: str) -> Tuple[str, Dict[str,Any]]:
     sys = "Summarize the core conversational idea/goal in 2–5 words (no punctuation). Examples: 'come over tonight', 'set a time', 'flirty teasing escalates'. Respond with only the phrase."
-    hist_exp = stitched_k_exp(history, 20)  # NEW
-    latest_exp = expand_slang(latest)       # NEW
+    hist_exp = stitched_k_exp(history, 20)  
+    latest_exp = expand_slang(latest)       
     usr = f"HISTORY(last 20):\n{hist_exp}\n\nLATEST:\n{latest_exp}\n\nIDEA:"
     out = await openai_chat_async([{"role":"system","content":sys},{"role":"user","content":usr}],
                                   temperature=0.2, max_tokens=8)
     idea = clamp(out).strip().lower()
     idea = re.sub(r"[^a-z0-9\s']", "", idea)[:40]
-    idea = idea or "move things forward"
+    idea = idea or "move things forward" #can i switch or to and
     return idea, {"raw": out}
 
 # ================== PLAN ==================
@@ -666,7 +665,7 @@ def plan_strategy(stage: str) -> Dict[str,str]:
     return {"goal": goals.get(stage,"Be natural and move things forward. Always try to progress forward stages. Stages in order from backward to forward: opener, banter, rapport, logistics, plan, confirm, wrap."),
             "tip":  tips.get(stage,"Direct answer; 5–14 words; single CTA.")}
 
-# ================== GENERATE (few-shots + rank) ==================
+# ================== GENERATE  ==================
 async def generate_options(history: List[Msg], latest: str, stage: str, plan: Dict[str,str], spice: int, idea: str, n=1) -> Tuple[List[str], Dict[str, Any]]:
     low = (latest or "").lower()
     ask_name = any(k in low for k in ["name", "who are you", "who’s this", "who is this"])
@@ -676,9 +675,9 @@ async def generate_options(history: List[Msg], latest: str, stage: str, plan: Di
         idea_hint = (
             "\nIf LATEST asks for an idea/plan, prefer cheeky, proximity-forward ideas, e.g.: "
             "\"movie and blanket on my couch\", "
-            "\"truth or dare—loser owes a kiss\", "
+            "\"truth or dare, loser owes a kiss\", "
             "\"massage trade, then dessert\", "
-            "\"pasta night, I’ll cook, you taste-test\", "
+            "\"pasta night. I’ll cook, you taste-test\", "
             "\"late walk then warm up at mine\"."
         )
 
@@ -688,7 +687,7 @@ async def generate_options(history: List[Msg], latest: str, stage: str, plan: Di
             "\nFor STAGE opener: keep it light and curious. "
             "No plans, no specifics, no ‘ready/fun/weekend/plan’. "
             "Absolutely avoid elongated greets (heyyy/hiii). "
-            "Keep 3–7 words; light, open-ended energy."
+            "Keep 3–5 words; light, open-ended energy."
         )
 
     system = (
@@ -710,7 +709,7 @@ async def generate_options(history: List[Msg], latest: str, stage: str, plan: Di
 
     user = (
         "HISTORY (latest last, keep context):\n"
-        f"{stitched_k(history, 20)}\n\n"
+        f"{stitched_k(history, CONTEXT_WINDOW)}\n\n"
         "LATEST:\n"
         f"{latest}\n\n"
         "Return 6 candidates in JSON."
@@ -732,7 +731,7 @@ async def generate_options(history: List[Msg], latest: str, stage: str, plan: Di
         if spice < 2:
             s = strip_winks(s).strip()
             if not s: continue
-        # Soft downweight common words "vibe"/"snack" by simple filter (NEW)
+        # Soft downweight common words "vibe"/"snack" by simple filter 
         if re.search(r"\b(vibe|snack|snacks)\b", s, flags=re.I):
             continue
         pool.append(s)
@@ -760,11 +759,11 @@ async def generate_options(history: List[Msg], latest: str, stage: str, plan: Di
     print("[QR][rank]", json.dumps(dbg, ensure_ascii=False))
     return chosen, dbg
 
-# ===== Forward-only stage enforcer (ADD-ONLY) =====
-STAGE_ORDER = STAGES[:]  # ["opener","banter","rapport","logistics","plan","confirm","wrap"]
+# ===== Forward-only stage enforcer =====
+STAGE_ORDER = STAGES[:]  
 STAGE_POS = {s:i for i,s in enumerate(STAGE_ORDER)}
 
-# cues that mean "progress" (booking/time/concrete meet/proximity)
+# cues that mean progress (booking/time/concrete meet/proximity)
 FORWARD_CUES_RX = re.compile(
     r"\b(let'?s|set|pick|book|reserve|lock|plan|meet|grab|call|swing by|pull up|come over|my place|your place|"
     r"tonight|tmr|tomorrow|after|later|7|8|9|10\s*(?:am|pm)?)\b|:\d\d", re.I)
@@ -851,14 +850,14 @@ async def suggest(req: Request):
             ]
 
     data = SuggestReq(**(body if isinstance(body, dict) else {}))
-    hist = [Msg(role=m.role, text=clamp(m.text)) for m in (data.context or [])][-20:]
+    hist = [Msg(role=m.role, text=clamp(m.text)) for m in (data.context or [])][-CONTEXT_WINDOW:]
     latest = last_incoming(hist)
     print("[QR][suggest][input]", {"hist_len": len(hist), "latest": latest})
 
     if not latest:
         return {"stage":"banter", "plan":plan_strategy("banter"), "options":[], "spice": 1, "debug":{"why":"no latest"}}
 
-    # ===== Memory lookup (NEW) =====
+    # ===== Memory lookup  =====
     mem_lines: List[str] = []
     if MEM_ENABLE:
         try:
@@ -877,12 +876,12 @@ async def suggest(req: Request):
 
     stage, stage_dbg = await classify_stage(hist, latest)
     plan  = plan_strategy(stage)
-    inferred_spice, spice_dbg = infer_spice(hist, latest, k=20)
+    inferred_spice, spice_dbg = infer_spice(hist, latest, k=CONTEXT_WINDOW)
     # allow inferred spice 4; user-specified spice only honored for 0–3
     spice = data.spice if isinstance(data.spice, int) and 0 <= data.spice <= 3 else inferred_spice
 
-    # ---- HARD GUARD: enforce floor unless RED_DOWN seen (NEW) ----
-    hist_text = " ".join(m.text for m in hist[-20:] if m.text).lower()
+    # ---- HARD GUARD: enforce floor unless RED_DOWN seen ----
+    hist_text = " ".join(m.text for m in hist[-CONTEXT_WINDOW:] if m.text).lower()
     if not RED_DOWN.search(hist_text):
         spice = max(spice, MIN_SPICE_FLOOR)
 
@@ -895,7 +894,7 @@ async def suggest(req: Request):
     options, gen_dbg = await generate_options(hist, latest, stage, plan, spice=spice, idea=idea, n=max(1, min(data.n, 3)))
     print("[QR][generate_options]", json.dumps(gen_dbg, ensure_ascii=False))
 
-    # ===== Merge memory-first (NEW, non-invasive) =====
+    # ===== Merge memory-first =====
     merged: List[str] = []
     for s in (mem_lines + options):
         s = clean_option(s)
@@ -905,7 +904,7 @@ async def suggest(req: Request):
             break
     options = merged
 
-    if len(options) < data.n:
+    if len(options) < data.n: # fill-ins
         low = latest.lower()
         if "name" in low:
             fill = [f"I'm {USER_NAME}. Nice to meet you",
@@ -916,9 +915,7 @@ async def suggest(req: Request):
                     "Can do. Any preference on day/place?",
                     "Let’s pick a time that works"]
         else:
-            fill = ["Want me to suggest a time?",
-                    "Happy to—what works for you?",
-                    "Cool—shall we pick a day?"]
+            fill = ["filler triggered"]
         for f in fill:
             f = clean_option(f)
             if ";" in f or re.search(DEFERRALS, f, flags=re.I): continue
@@ -961,7 +958,7 @@ def feedback(req: FeedbackReq):
         conn.commit()
     return {"ok": True}
 
-# === ADD THIS AT THE BOTTOM OF app.py (anywhere after the other routes) ===
+# ==============COMMIT TO DATABASE==========================
 @app.post("/commit")
 async def commit(req: Request):
     """
@@ -994,7 +991,7 @@ async def commit(req: Request):
     if not isinstance(opts, list) or not opts:
         return {"ok": False, "error": "missing options"}
 
-    # normalize options → keep text + optional rating/reason  # NEW
+    # normalize options -> keep text + optional rating/reason 
     norm: List[Tuple[str, Optional[str], str]] = []  # (resp, rating, reason)
     for o in opts:
         if isinstance(o, str):
@@ -1026,7 +1023,7 @@ async def commit(req: Request):
     entry = data.get(key) or {}
     items: List[Dict[str, Any]] = entry.get("items") or []
 
-    # de-dupe by resp; update if exists, else append  # UPDATED
+    # de-dupe by resp; update if exists, else append 
     index_by_resp = {it.get("resp"): i for i, it in enumerate(items) if isinstance(it, dict)}
     added = 0
     for s, rating, reason in norm:
@@ -1034,7 +1031,7 @@ async def commit(req: Request):
             "resp": s,
             "stage": stage,
             "heat": heat,
-            "rating": rating,           # NEW: preserve incoming rating (Y/N/None)
+            "rating": rating,           # preserve incoming rating (Y/N/None)
             "reason": reason or "",
             "ts": ts,
         }
