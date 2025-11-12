@@ -721,6 +721,12 @@ function findScrollParent(el) {
 
 // Replace your existing getChatRoot() with this
 function getChatRoot() {
+  // [NEW] Prefer explicit per-thread container (e.g., Messenger)
+  const explicit = document.querySelector(
+    '[aria-label^="Messages in conversation with "]'
+  );
+  if (explicit) return explicit;
+
   const composer = document.querySelector(
     'main [contenteditable="true"], [role="textbox"], textarea'
   );
