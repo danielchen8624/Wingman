@@ -880,12 +880,12 @@ async def suggest(req: Request):
     # allow inferred spice 4; user-specified spice only honored for 0–3
     spice = data.spice if isinstance(data.spice, int) and 0 <= data.spice <= 3 else inferred_spice
 
-    # ---- HARD GUARD: enforce floor unless RED_DOWN seen ----
+    # ---- enforce floor unless RED_DOWN seen ----
     hist_text = " ".join(m.text for m in hist[-CONTEXT_WINDOW:] if m.text).lower()
     if not RED_DOWN.search(hist_text):
         spice = max(spice, MIN_SPICE_FLOOR)
 
-    # ---- Trim memory influence at high spice (H3+) — minimal, non-invasive ----
+    # ---- Trim memory influence at high spice (H3+)  ----
     if spice >= 3 and mem_lines:
         mem_lines = mem_lines[:1]
 
