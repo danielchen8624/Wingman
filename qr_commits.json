@@ -2698,5 +2698,81 @@
         "ts": 1762820842262
       }
     ]
+  },
+  "You sent hi i want you in miy bed rn Enter": {
+    "items": [
+      {
+        "resp": "Let's make that happen then",
+        "stage": "banter",
+        "heat": 4,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1763152415586
+      },
+      {
+        "resp": "filler triggered",
+        "stage": "banter",
+        "heat": 4,
+        "rating": null,
+        "reason": "",
+        "ts": 1763152415586
+      }
+    ]
+  },
+  "Wendy Harper Hi lick my pussy Enter": {
+    "items": [
+      {
+        "resp": "I’m good at following orders 😉",
+        "stage": "banter",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1763152455605
+      },
+      {
+        "resp": "Only if you keep it warm",
+        "stage": "banter",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1763152455605
+      },
+      {
+        "resp": "What else you got for me?",
+        "stage": "banter",
+        "heat": 3,
+        "rating": "N",
+        "reason": "",
+        "ts": 1763152455605
+      }
+    ]
+  },
+  "Wendy Harper Good follow mommy’s orders then Enter": {
+    "items": [
+      {
+        "resp": "I'm ready to please, what’s next?",
+        "stage": "banter",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1763152638043
+      },
+      {
+        "resp": "How can I serve you best?",
+        "stage": "banter",
+        "heat": 3,
+        "rating": "Y",
+        "reason": "",
+        "ts": 1763152638043
+      },
+      {
+        "resp": "You got my attention, now what?",
+        "stage": "banter",
+        "heat": 3,
+        "rating": "N",
+        "reason": "",
+        "ts": 1763152638043
+      }
+    ]
   }
 }

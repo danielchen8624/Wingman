@@ -28,7 +28,7 @@ function overlay() {
       minWidth: "320px",
     });
 
-    // Launcher (collapsed state)
+    // Launcher 
     const launcher = document.createElement("button");
     launcher.id = "qr-launch";
     launcher.textContent = "Activate Wingman";
@@ -124,7 +124,7 @@ function bodyEl() {
   return panel || document.getElementById("qr-body");
 }
 
-/* ---------- Wingman UI helpers  ---------- */
+//UI HELPERS
 function wingmanPanelStyle() {
 
   return {
@@ -185,7 +185,7 @@ function spinnerStyle() {
   document.head.appendChild(st);
 })();
 
-// Launcher drag state (collapsed only)
+// Launcher drag state cpplapse
 let __wingmanOpen = false;
 let __dragActive = false;
 let __dragStart = { x: 0, y: 0 };
@@ -197,24 +197,21 @@ function enableLauncherDrag() {
   const launcher = root.querySelector("#qr-launch");
   if (!launcher || launcher.__dragBound) return;
 
-  // Reset “just dragged” flag before each interaction
   launcher.addEventListener(
     "mousedown",
     (e) => (launcher.__dragJustHappened = false)
   );
 
   const down = (e) => {
-    if (__wingmanOpen) return; // only when collapsed
+    if (__wingmanOpen) return; 
     __dragActive = true;
     __dragMoved = false;
 
-    // Switch container to top/left positioning for smooth free drag
     const host = root;
     const rect = host.getBoundingClientRect();
     const startX = e.touches ? e.touches[0].clientX : e.clientX;
     const startY = e.touches ? e.touches[0].clientY : e.clientY;
 
-    // Convert current bottom/right into explicit top/left
     const top = rect.top;
     const left = rect.left;
     host.style.top = `${Math.max(
@@ -295,7 +292,7 @@ function disableLauncherDrag() {
 
   launcher.replaceWith(launcher.cloneNode(true)); // remove all handlers cleanly
   const fresh = overlay().querySelector("#qr-launch");
-  // Rewire only the click (drag is disabled while expanded)
+  // Rewire only the click so drag is disabled 
   fresh.addEventListener("click", () => {
     if (fresh.__dragJustHappened) return;
     fresh.style.display = "none"; // ensure instant hide
@@ -496,7 +493,7 @@ function spawnHeatEmojis(heat) {
   }
 }
 
-/* ---------------- Small helpers ---------------- */
+/*  helpers */
 
 function showToast(msg) {
   const root = overlay();
@@ -544,7 +541,7 @@ async function copyText(text) {
   showToast(" Copied!");
 }
 
-// NEW ---- Commit snapshot state ----
+//Commit snapshot state ----
 window.__qr_pending = null;
 
 function makeSnapshot(latestText, stage, heat, options) {
@@ -606,7 +603,7 @@ function pickAdapter() {
 }
 const AD = pickAdapter();
 
-/* ---------------- Context store (per thread) ---------------- */
+// Context store 
 const clamp = (s) => (s || "").trim().replace(/\s+/g, " ").slice(0, MAX_CHARS);
 function sanitizeCtx(x) {
   if (!Array.isArray(x)) return [];
@@ -663,7 +660,7 @@ function maybeThreadRotate() {
 }
 setInterval(maybeThreadRotate, 500);
 
-/* ---------------- Fresh-convo detector ---------------- */
+//fresh convo detection
 const GREETING_RX =
   /^(he(y+|llo)|hi+|yo|sup|hru|wyd|gm|gn|hey there|hi there)[\s!?]*$/i;
 function softResetIfNewConversation(latest, history) {
@@ -719,9 +716,8 @@ function findScrollParent(el) {
   return null;
 }
 
-// Replace your existing getChatRoot() with this
 function getChatRoot() {
-  // [NEW] Prefer explicit per-thread container (e.g., Messenger)
+  //  Prefer explicit per-thread container 
   const explicit = document.querySelector(
     '[aria-label^="Messages in conversation with "]'
   );
